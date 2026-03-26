@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "primary-container": "#4a6274",
+              "on-primary-fixed": "#021e2d",
+              "on-primary-fixed-variant": "#31495b",
+              "on-secondary-fixed": "#25190f",
+              "inverse-surface": "#2e3132",
+              "outline": "#73787c",
+              "surface-container-low": "#f3f4f5",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#f8f9fa",
+              "on-error": "#ffffff",
+              "secondary": "#6c5b4e",
+              "tertiary-container": "#765a3d",
+              "secondary-fixed-dim": "#d9c2b2",
+              "inverse-on-surface": "#f0f1f2",
+              "inverse-primary": "#b1cade",
+              "tertiary-fixed": "#ffdcbb",
+              "on-tertiary-fixed": "#2a1702",
+              "outline-variant": "#c3c7cc",
+              "on-primary": "#ffffff",
+              "tertiary": "#5c4328",
+              "tertiary-fixed-dim": "#e4c09c",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#726153",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#f9d3af",
+              "on-secondary-fixed-variant": "#534437",
+              "secondary-container": "#f6decd",
+              "surface-dim": "#d9dadb",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "surface": "#f8f9fa",
+              "on-surface-variant": "#43474c",
+              "surface-tint": "#496173",
+              "secondary-fixed": "#f6decd",
+              "on-error-container": "#93000a",
+              "on-background": "#191c1d",
+              "background": "#f8f9fa",
+              "on-primary-container": "#c4ddf2",
+              "on-surface": "#191c1d",
+              "primary-fixed": "#cce6fb",
+              "primary": "#324a5b",
+              "primary-fixed-dim": "#b1cade",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#5b4227",
+              "surface-container-high": "#e7e8e9"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Newsreader"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-primary-gradient {
+        background: linear-gradient(135deg, #324a5b 0%, #4a6274 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-6 max-w-full mx-auto bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50">
+<div class="text-xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-headline">The Bespoke Craftsman</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label font-medium tracking-wide text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="#">Home</a>
+<a class="font-label font-medium tracking-wide text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="#">Our Story</a>
+<a class="font-label font-medium tracking-wide text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors" href="#">Services &amp; Gallery</a>
+<a class="font-label font-medium tracking-wide text-slate-900 dark:text-white border-b-2 border-slate-600 dark:border-slate-400 pb-1" href="#">Contact &amp; Quote</a>
+</div>
+<button class="bg-primary-gradient text-on-primary px-6 py-2.5 rounded-lg font-label font-semibold text-sm hover:scale-95 duration-150 ease-in-out">
+            Request a Quote
+        </button>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-8 max-w-7xl mx-auto mb-20 text-center">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface mb-6 tracking-tight">Begin Your Transformation</h1>
+<p class="font-body italic text-xl md:text-2xl text-on-surface-variant max-w-2xl mx-auto">
+                Every masterpiece begins with a conversation. Share your vision, and let us craft a sanctuary that reflects your soul.
+            </p>
+</header>
+<!-- Main Interaction Grid -->
+<div class="px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Quote Form Container -->
+<section class="lg:col-span-7 bg-surface-container-lowest p-10 md:p-16 rounded-xl relative">
+<div class="absolute -top-6 -left-6 hidden md:block w-32 h-32 opacity-10">
+<img class="w-full h-full object-cover rounded-full" data-alt="close-up detail of high-quality white subway tiles with clean grey grout lines in a minimalist bathroom setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANBUSL0L4NfrZjm3NTIgZjymuZ40eEyrXaRMAFySxPZeneCosHTj0-xBsVaRZcX6gwQounixstiENVc7G1eLk8Mno6kNR6Zlz4SzbWQDohPDLe9AbryepyoX_ng5RYMKH1tUzgo7caKUETbsibnak9GIX0CvcrawSFwesFS84FkJzplI6a0nFgN0rL5t94_54iuRf0JfwjYxMANZo0PUzU83yF4z2MEZ-Hlc17IXdgET1n8LF7QBqT5ihLqLgUXGI058GwduJmVKI"/>
+</div>
+<h2 class="font-headline text-3xl font-bold mb-10 text-primary">Project Details</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 font-body text-lg py-3 transition-all placeholder:text-surface-dim" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 font-body text-lg py-3 transition-all placeholder:text-surface-dim" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 font-body text-lg py-3 transition-all placeholder:text-surface-dim" placeholder="(555) 000-0000" type="tel"/>
+</div>
+<div class="relative">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Project Timeline</label>
+<select class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 font-body text-lg py-3 transition-all appearance-none">
+<option>Immediately</option>
+<option>Within 3 Months</option>
+<option>Planning Stage</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-2 block">Project Scope &amp; Vision</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 font-body text-lg py-3 transition-all placeholder:text-surface-dim resize-none" placeholder="Describe the textures, materials, and functional goals of your ideal bathroom..." rows="4"></textarea>
+</div>
+<div class="pt-6">
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-outline mb-6">Preferred Material Palette</h3>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center gap-3 px-5 py-3 bg-secondary-container rounded-full hover:scale-105 transition-transform" type="button">
+<span class="w-4 h-4 rounded-full bg-[#f6decd] border border-black/10"></span>
+<span class="font-label text-sm font-semibold text-on-secondary-container">Natural Oak</span>
+</button>
+<button class="flex items-center gap-3 px-5 py-3 bg-surface-container rounded-full border border-outline/10 hover:border-primary transition-all" type="button">
+<span class="w-4 h-4 rounded-full bg-[#324a5b] border border-black/10"></span>
+<span class="font-label text-sm font-semibold text-on-surface">Polished Slate</span>
+</button>
+<button class="flex items-center gap-3 px-5 py-3 bg-surface-container rounded-full border border-outline/10 hover:border-primary transition-all" type="button">
+<span class="w-4 h-4 rounded-full bg-[#e1e3e4] border border-black/10"></span>
+<span class="font-label text-sm font-semibold text-on-surface">Carrara Marble</span>
+</button>
+</div>
+</div>
+<button class="w-full bg-primary-gradient text-on-primary py-5 rounded-lg font-headline font-bold text-lg hover:shadow-xl transition-all active:scale-95">
+                        Submit Request for Consultation
+                    </button>
+</form>
+</section>
+<!-- Info & Map Column -->
+<aside class="lg:col-span-5 space-y-12">
+<!-- Location Info -->
+<div class="bg-surface-container-low p-10 rounded-xl">
+<h2 class="font-headline text-2xl font-bold mb-6 text-on-surface">The Workshop</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<p class="font-label font-bold text-sm uppercase tracking-wider text-outline mb-1">Studio Address</p>
+<p class="font-body text-lg">1204 Artisan Way, Suite 400<br/>Portland, Oregon 97201</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<div>
+<p class="font-label font-bold text-sm uppercase tracking-wider text-outline mb-1">Consultation Hours</p>
+<p class="font-body text-lg">Monday – Friday: 9:00 AM – 6:00 PM<br/>Saturday: By Appointment Only</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Map Placeholder -->
+<div class="rounded-xl overflow-hidden aspect-square lg:aspect-video relative group">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700" data-alt="stylized architectural map showing a residential neighborhood with clean lines and soft muted blue and grey tones" data-location="Portland, Oregon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgh7J_xapKazxTzk6AwDpPgAp3fUgHjzb5k1DXNRq18VArGwWjmZRRi9g9oBtaBXJccG4t_b0sbCEaZSjDUzKsjjC7iCe4lz4sbQoGhELaZpsRoNbO5VStWDZd7vj7wlfi-savaX_fE2zW-4vKvaG903Kumzdewx3KbaVU15jFPzmXMM0HIRm501e_uMLttw0nsFifhYkvAGdvZlJmr3VHOECuOBrMWKiKSuNtiYIAGsL56eWTBTR90kMMEp6uAMnMjdSiwX0Bh5I"/>
+<div class="absolute inset-0 bg-primary/20 pointer-events-none transition-opacity group-hover:opacity-0"></div>
+<div class="absolute bottom-6 left-6 bg-surface-container-lowest p-4 rounded-lg shadow-lg">
+<p class="font-label font-bold text-xs uppercase tracking-tighter text-primary">Serving the Greater</p>
+<p class="font-headline text-xl font-extrabold text-on-surface">Portland Metro Area</p>
+</div>
+</div>
+<!-- Professional Quote -->
+<div class="p-8 border-l-4 border-secondary-container">
+<p class="font-body italic text-xl text-on-surface-variant mb-4">
+                        "True luxury is not found in the price of materials, but in the precision of their assembly and the peace they provide the inhabitant."
+                    </p>
+<p class="font-label font-bold text-sm tracking-widest text-secondary">— ELIAS VANCE, FOUNDER</p>
+</div>
+</aside>
+</div>
+<!-- Trust Section (Asymmetric) -->
+<section class="mt-32 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="aspect-[4/5] bg-surface-container rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="a master craftsman meticulously finishing a bespoke wooden vanity in a sunlit workshop with wood shavings visible" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8qctfEmOyEO6U_Bw_k7t6q9xXBUFPIam-_hdwRQH9Xo6Zi1IhHyWPjrisIvHJCyk9sOQV_mFO_QPWo_GrvJuwETeRAhIozTndgX2X0cBLWarX-0cs2fA1UaKgrY9erctia9byG9_rzxyaqh_-hz_6fy-Gj-6-2G2dyS0nhf7mqQ9t646ET8wLTs7gkHxE-TdUCvrOGYbyz3_s-h0M1wIui2JquF00Tb5aKZqRtCAfeSTg0YSiJjeMa3rLt6-KtHPH7ZEfXBB6E00"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-surface-container-lowest shadow-2xl rounded-xl p-6 hidden lg:block">
+<p class="font-headline text-4xl font-black text-primary mb-1">15+</p>
+<p class="font-label text-xs font-bold uppercase tracking-widest text-outline">Years of Master Craftsmanship</p>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-headline text-4xl font-bold mb-8 text-on-surface">What to Expect</h2>
+<ul class="space-y-10">
+<li class="flex gap-6">
+<span class="font-headline text-5xl font-black text-outline/20">01</span>
+<div>
+<h4 class="font-label font-bold text-lg mb-2">Initial Dialogue</h4>
+<p class="font-body text-lg text-on-surface-variant">A 30-minute discovery call to understand your space, lifestyle requirements, and aesthetic preferences.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="font-headline text-5xl font-black text-outline/20">02</span>
+<div>
+<h4 class="font-label font-bold text-lg mb-2">On-Site Evaluation</h4>
+<p class="font-body text-lg text-on-surface-variant">A detailed technical assessment of your current infrastructure to ensure structural integrity and possibilities.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="font-headline text-5xl font-black text-outline/20">03</span>
+<div>
+<h4 class="font-label font-bold text-lg mb-2">The Proposal</h4>
+<p class="font-body text-lg text-on-surface-variant">A comprehensive architectural vision including material swatches, 3D renderings, and a transparent investment breakdown.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-20 px-12 grid grid-cols-1 md:grid-cols-3 gap-12 items-start border-t-0">
+<div>
+<div class="text-lg font-semibold text-slate-800 dark:text-slate-200 font-headline mb-6 uppercase tracking-widest">The Bespoke Craftsman</div>
+<p class="font-newsreader italic text-lg text-slate-600 dark:text-slate-400 mb-8">
+                Meticulously crafting bathrooms that serve as private sanctuaries of peace and impeccable design.
+            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline">verified</span>
+<span class="material-symbols-outlined text-outline">security</span>
+<span class="material-symbols-outlined text-outline">architecture</span>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label font-bold text-xs uppercase tracking-[0.2em] text-on-surface">Connect</h4>
+<div class="flex flex-col gap-4">
+<a class="font-manrope text-slate-500 dark:text-slate-400 underline decoration-slate-300 underline-offset-4 transition-all hover:text-slate-900 dark:hover:text-white" href="#">About</a>
+<a class="font-manrope text-slate-500 dark:text-slate-400 underline decoration-slate-300 underline-offset-4 transition-all hover:text-slate-900 dark:hover:text-white" href="#">Services</a>
+<a class="font-manrope text-slate-500 dark:text-slate-400 underline decoration-slate-300 underline-offset-4 transition-all hover:text-slate-900 dark:hover:text-white" href="#">Gallery</a>
+<a class="font-manrope text-slate-500 dark:text-slate-400 underline decoration-slate-300 underline-offset-4 transition-all hover:text-slate-900 dark:hover:text-white" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label font-bold text-xs uppercase tracking-[0.2em] text-on-surface">Inquiries</h4>
+<p class="font-newsreader text-xl text-slate-600 dark:text-slate-400">
+                Direct: (503) 555-0198<br/>
+                Studio: hello@bespokecraftsman.design
+            </p>
+<p class="text-sm font-manrope text-slate-500 dark:text-slate-400 pt-4">
+                © 2024 The Bespoke Craftsman. Meticulously Crafted Bathrooms.
+            </p>
+</div>
+</footer>
+</body></html>
