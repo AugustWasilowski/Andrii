@@ -278,6 +278,88 @@ And replace the hex code with a new color. Use **https://htmlcolorcodes.com** to
 
 ---
 
+## Part 9 — Google Stitch (How This Website Was Designed)
+
+This entire website was designed using **Google Stitch** — an AI-powered web design tool made by Google. Instead of hand-drawing every pixel, August described what the site should look like in plain English, and Stitch generated all four pages with a complete design system (colors, fonts, spacing, the works).
+
+The cool part: **Stitch is built into Antigravity.** You can use it right from the chat window to design brand new pages or redesign existing ones — no Photoshop, no Figma, no design experience needed.
+
+### What's Already in Stitch
+
+The existing project is called **"Bespoke Craftsman"** and it contains:
+
+| Screen | What It Is |
+|---|---|
+| Home Page | Hero section, founder story, portfolio, CTA |
+| Our Story | Deep dive into the founder's background |
+| Services & Gallery | Service offerings and photo showcases |
+| Contact & Quote | Contact form and business info |
+
+It also has a full **Design System** that defines:
+- **Colors** — Slate blue primary, warm brown secondary, gold/amber tertiary
+- **Fonts** — Manrope (headlines) + Newsreader (body text)
+- **Shape** — Subtle rounded corners
+- **Appearance** — Light mode with premium "editorial atelier" aesthetic
+
+### How to Use Stitch in Antigravity
+
+You can talk to Stitch through Antigravity's AI chat. Here are some things you can ask it to do:
+
+#### Generate a brand new screen
+Just describe what you want in the chat:
+```
+Use Stitch to generate a new "Testimonials" page for the 
+Bespoke Craftsman project. It should show customer reviews 
+with star ratings and before/after photos.
+```
+
+#### Edit an existing screen
+Tell it which screen to change and what to do:
+```
+Use Stitch to edit the Home Page screen in the Bespoke 
+Craftsman project. Add a "Why Choose Us" section with 
+three columns highlighting speed, quality, and warranty.
+```
+
+#### Update the design system
+Want to change the whole look and feel? You can update colors, fonts, and more:
+```
+Update the Bespoke Craftsman design system to use a 
+dark mode with navy blue backgrounds and gold accents.
+```
+
+#### Create a whole new website
+You can also start fresh with a brand new project:
+```
+Create a new Stitch project called "My Portfolio" and 
+generate a personal portfolio page with an about section, 
+skills grid, and contact form.
+```
+
+### From Stitch Design → Live Website
+
+After Stitch generates or updates a screen, you can download the HTML it produces and replace the files in this project. The flow looks like this:
+
+```
+1. Ask Antigravity's AI chat to generate/edit a screen in Stitch
+2. Download the generated HTML
+3. Replace or add the .html file in this project folder
+4. Preview locally with: firebase serve
+5. Stage → Commit → Push (same as Part 7)
+6. Auto-deploys to the live site ✨
+```
+
+> **Think of Stitch as your AI designer** and this Git/Firebase setup as your delivery pipeline. Stitch creates the designs, you push them live.
+
+### Stitch Tips for Beginners
+
+- **Be specific in your descriptions.** Instead of "make a nice page," say "a page with a full-width hero image, a 3-column feature grid below it, and a dark footer with social media links."
+- **Mention the style.** Say things like "modern and minimal," "luxury and elegant," or "fun and colorful" to guide the AI.
+- **Iterate.** If the first result isn't perfect, just tell it what to change: "make the header bigger" or "swap the blue for green."
+- **Use the design system.** Stitch keeps everything visually consistent across pages automatically through the design system, so new pages will match the existing look.
+
+---
+
 ## Troubleshooting
 
 ### "I made changes but the live site didn't update"
@@ -324,6 +406,9 @@ This means someone else edited the same line you did at the same time. Tell Augu
 | **HTML** | The language web pages are written in |
 | **Deploy** | Put new code onto the live website |
 | **GitHub Action** | An automated script that runs when you push code |
+| **Stitch** | Google's AI web design tool — describe what you want, it generates the HTML |
+| **MCP** | Model Context Protocol — how tools like Stitch plug into Antigravity's chat |
+| **Design System** | A set of rules for colors, fonts, and spacing that keep a site looking consistent |
 
 ---
 
